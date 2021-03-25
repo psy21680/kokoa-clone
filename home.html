@@ -4,19 +4,25 @@
         <title>Home - My first website.</title>
         <style>
             body{
+                height:100vh;                         <!--body의 높이를 화면전체로 바꿔주어야 aling-items가 작동-->      
                 margin:20px;
+                display:flex;
+                justify-content:space-evenly;
+                align-items:center;
             }
             div{
-                display:inline-block;
-                width:50px;
-                height:50px;
+                width:100px;
+                height:100px;
                 background-color: teal;
+            }
+            #second{
+                background-color:wheat;
             }
         </style>    
     </head>
     <body>
        <div></div>
-       <div></div>
+       <div id="second"></div>
        <div></div>
     </body>
 </html>
