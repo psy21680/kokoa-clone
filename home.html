@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="kr">
+
+
+
+
     <head>
-        <title>Home - My first website.</title>
+        <title>The Nico Times</title>
         <style>
             body{
-                height:100vh;                         <!--body의 높이를 화면전체로 바꿔주어야 aling-items가 작동-->      
+                height:1000vh;         
                 margin:20px;
-                display:flex;
-                justify-content:space-evenly;
-                align-items:center;
-                flex-wrap:nowrap;
             }
             div{
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                color:white;
                 width:300px;
                 height:300px;
-                font-size:10px;
+                color:white;
                 background-color: teal;
             }
-            #second{
+            #different{
+                top:30px;          <!--프로퍼티 하나만 수정해도 초록이 신경안씀 = 이제는 서로다른 레이어에 있다는 뜻-->
+                left:200px;
+                position:fixed;
                 background-color:wheat;
+                width:350px;
             }
         </style>    
     </head>
+
+
+
+
+
     <body>
-       <div>1</div>
-       <div id="second">2</div>
-       <div>3</div>
+       <div></div>
+       <div id="different"></div>
     </body>
 </html>
