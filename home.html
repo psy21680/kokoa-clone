@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="kr">
 
-
-
-
     <head>
         <title>The Nico Times</title>
         <style>
             body{
                 height:1000vh;         
-                margin:20px;
+                margin:50px;
             }
             div{
                 width:300px;
                 height:300px;
-                color:white;
-                background-color: teal;
-            }
-            #different{
-                top:30px;          <!--프로퍼티 하나만 수정해도 초록이 신경안씀 = 이제는 서로다른 레이어에 있다는 뜻-->
-                left:200px;
-                position:fixed;
                 background-color:wheat;
-                width:350px;
+                position:relative;
+
+            }
+            .green{
+                background-color:teal;
+                height:100px;
+                width:100px;
+                position:absolute;
+                bottom:0px;
+                right:0px;
+                width:100px;
             }
         </style>    
     </head>
 
-
-
-
-
     <body>
-       <div></div>
-       <div id="different"></div>
+       <div>
+           <div class="green"></div>
+       </div>
     </body>
 </html>
