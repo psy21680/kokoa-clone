@@ -9,20 +9,29 @@
                 margin:50px;
             }
             span{
-                background-color:tomato;
+                background-color:yellowgreen;
+                padding:5px;
+                border-radius:10px;
             }
-            span:nth-child(even){      /*even은 짝수 2n가능,odd는 홀수 2n+1가능*/
-                background-color:teal;
+            p span{             /* 먼저 부모를 쓰고 자식을 쓴다, 원하는 만큼 부모를 써도 상관 없음 !!*/
+                color:white;
+            }
+            div > span{
+                text-decoration:underline;
+            }
+            p + span{           /*p다음에 오는 span(같은 형제관계의)*/
+                color:tomato;
             }
         </style>    
     </head>
 
     <body>
+        <div>
+       <p>
+           hahahahahahahahhaha<span>inside</span>
+       </p>
        <span>hello</span>
-       <span>hello</span>
-       <span>hello</span>
-       <span>hello</span>
-       <span>hello</span>
+       </div>
 
     </body>
 </html>
