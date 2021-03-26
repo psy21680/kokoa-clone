@@ -9,27 +9,27 @@
                 margin:50px;
             }
             div{
-                width:300px;
-                height:300px;
+                width:150px;
+                height:150px;
                 background-color:wheat;
                 position:relative;
 
             }
-            .green{
-                background-color:teal;
-                height:100px;
-                width:100px;
-                position:absolute;
-                bottom:0px;
-                right:0px;
-                width:100px;
+            div:first-child{
+                background-color:tomato;  /*id나 class를 지정하는 것 보단 html code를 안건들인 채로 이렇게 적어주는게 좋다*/
+            }
+            div:last-child{
+                background-color:teal;  
             }
         </style>    
     </head>
 
     <body>
-       <div>
-           <div class="green"></div>
-       </div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+       <div></div>
+
     </body>
 </html>
