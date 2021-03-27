@@ -13,24 +13,24 @@
                 padding:5px;
                 border-radius:10px;
             }
-            p span{             /* 먼저 부모를 쓰고 자식을 쓴다, 원하는 만큼 부모를 써도 상관 없음 !!*/
-                color:white;
-            }
-            div > span{
-                text-decoration:underline;
-            }
-            p + span{           /*p다음에 오는 span(같은 형제관계의)*/
-                color:tomato;
-            }
+         input{
+             border:1px solid wheat;
+         }
+         input:required{
+             border-color:tomato;
+         }
+         input[placeholder~="name"]{
+             background-color:pink;
+         }
         </style>    
     </head>
 
     <body>
         <div>
-       <p>
-           hahahahahahahahhaha<span>inside</span>
-       </p>
-       <span>hello</span>
+       <form>
+           <input type="text" placeholder="First name"/>
+           <input type="password" required placeholder="Last name"/>
+       </form>
        </div>
 
     </body>
