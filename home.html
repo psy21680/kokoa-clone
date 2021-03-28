@@ -8,26 +8,23 @@
                 height:1000vh;         
                 margin:50px;
             }
-       form{
-           border:1px solid salmon;
-           display:flex;
-           flex-direction:column;
-           padding:20px;
-       }
-       form:focus-within{
-           border-color:seagreen;
-       }
-       form:hover input:focus{
-           background-color:sienna;
-       }
+            input::placeholder{
+                color:yellowgreen;
+            }
+            p::selection{
+                color:white;
+                background-color:yellowgreen;
+            }
+     
         </style>    
     </head>
 
     <body>
         <form>
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
+            <input type="text" placeholder="Name"/>
         </form>
+        <p>
+            hello
+        </p>
     </body>
 </html>
